@@ -1,14 +1,21 @@
-a {
-    color: #333;
+a,
+a.visited {
+    color: #777;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
+a:link,
+a:visited,
 a:hover,
-a:focus {
-    text-decoration: none;
-    color: #176e61;
+a:focus {  
+  text-decoration: none;    
+}
+
+a:hover,
+a:focus {    
+  color: #333;
 }
 
 ul li::before,
@@ -26,7 +33,8 @@ body.index {
   -o-background-size: cover;
   margin:0;
   padding:0;
-  height:100%
+  height:100%;
+  min-width: 800px;
 }
 
 .index-logo {
@@ -35,8 +43,13 @@ body.index {
   font-size: 40px;
   color: #777;
   padding-top: 30px;
-  padding-left: 60px;
+  padding-left: 0;
   letter-spacing: 1px;
+
+  a:hover,
+  a:focus {    
+    color: #333;
+  }
 }
 
 .index-menu {
@@ -51,6 +64,12 @@ body.index {
       padding-bottom: 3px;
       font-size: 15px;
     }
+  }
+
+  a, a:visited { color: #333; }
+  a:hover,
+  a:focus {    
+    color: #551a8b;
   }
 }
 
@@ -70,9 +89,30 @@ body.index {
 .index-form {
   position: absolute;
   top: 0;
-  right: 60px;
+  right: 80px;
   bottom: 0;
   background-color: rgba(255,255,255,0.85);
   height: 100%;
   min-height: 100%;
+
+  a {
+    color: #777;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;    
+  }
+  a:hover,
+  a:focus {    
+    color: #333;
+  }
+
+  ul {
+    margin-left: -15px;
+    margin-top: -15px;
+    padding-top: 30px !important; 
+  }
+
+  li {
+    display: inline;
+  }
 }

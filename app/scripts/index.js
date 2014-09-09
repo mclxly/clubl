@@ -27,8 +27,8 @@
 
   //Dynamically assign height
   function sizeContent() {
-      var newHeight = $("html").height() + "px";
-      $(".index-form").css("height", "100%");
-      console.log($("html").height());
+      var newHeight = $(document).height() + "px";
+      $(".index-form").css("height", newHeight);//"100%");
+      console.log($(document).height());
   }
 })();

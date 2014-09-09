@@ -13,6 +13,11 @@
  */
 @import 'components/components';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   width: 100%;
@@ -365,4 +370,8 @@ main {
   font-weight: 700;
   src: url(/fonts/RobotoCondensed-BoldItalic.eot);
   src: local('Roboto Condensed Bold Italic'), local('RobotoCondensed-BoldItalic'), url(/fonts/RobotoCondensed-BoldItalic.eot) format('embedded-opentype'), url(/fonts/RobotoCondensed-BoldItalic.woff) format('woff');
+}
+
+.navbar {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
