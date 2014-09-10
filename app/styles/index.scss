@@ -9,12 +9,12 @@ a.visited {
 a:link,
 a:visited,
 a:hover,
-a:focus {  
-  text-decoration: none;    
+a:focus {
+  text-decoration: none;
 }
 
 a:hover,
-a:focus {    
+a:focus {
   color: #333;
 }
 
@@ -34,7 +34,24 @@ body.index {
   margin:0;
   padding:0;
   height:100%;
-  min-width: 800px;
+  min-width: 1020px;
+
+  .container {
+    height: 100%;
+
+    .my-column {
+      /*display: inline;*/
+    }
+
+    .left {
+      width: 50%;
+      float: left;
+    }
+    .right {
+      width: 50%;
+      float: right;
+    }
+  }
 }
 
 .index-logo {
@@ -43,11 +60,11 @@ body.index {
   font-size: 40px;
   color: #777;
   padding-top: 30px;
-  padding-left: 0;
+  padding-left: 10px;
   letter-spacing: 1px;
 
   a:hover,
-  a:focus {    
+  a:focus {
     color: #333;
   }
 }
@@ -68,7 +85,7 @@ body.index {
 
   a, a:visited { color: #333; }
   a:hover,
-  a:focus {    
+  a:focus {
     color: #551a8b;
   }
 }
@@ -94,25 +111,79 @@ body.index {
   background-color: rgba(255,255,255,0.85);
   height: 100%;
   min-height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 340px;
 
   a {
     color: #777;
     line-height: 20px;
     font-size: 14px;
-    font-weight: bold;    
+    font-weight: bold;
   }
   a:hover,
-  a:focus {    
+  a:focus {
     color: #333;
   }
 
   ul {
     margin-left: -15px;
     margin-top: -15px;
-    padding-top: 30px !important; 
+    padding-top: 30px !important;
   }
 
   li {
     display: inline;
+  }
+
+  .index-form-nav {
+    padding-top: 5px;
+  }
+
+  .index-form-logo {
+    margin: 15px;
+  }
+
+  p {
+    font-family: Gentium Basic;
+    font-size: 20px;
+    padding-top: 0.5em;
+  }
+
+  .linefade{
+    border: 0;
+    position: relative;
+    width: 100%;
+     height: 1px;
+     background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  }
+
+  #loginform label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2em;
+  }
+
+  #loginform input {
+    width: 33.33%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+  }
+
+  #loginform p {
+    line-height: 1em;
+  }
+
+  .forget-info {
+    padding-top: 20px;
+
+    a {
+      font-size: 0.6em;
+      font-weight: normal;
+    }
   }
 }

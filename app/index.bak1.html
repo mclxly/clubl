@@ -30,63 +30,53 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
-
+        
   </head>
   <body class="index">
     <div class="container">
-      <div class="my-column left">
-        <div class="index-logo">
-          <a href="/">THE CLUB L</a>
-        </div>
+      <div class="index-logo">
+        <a href="/">THE CLUB L</a>      
+      </div>
 
-        <div class="index-menu">
-          <ul class="list-links">
-            <li><a href="information.html">ACADEMIC AID</a></li>
-            <li><a href="information.html">CAREER ADVISORY</a></li>
-            <li><a href="information.html">SOCIAL &amp; LIFE</a></li>
-            <li><a href="information.html">PREFERRED SERVICE</a></li>
-            <li><a href="information.html">ULTIMATE SERVICE</a></li>
+      <div class="index-menu">
+        <ul class="list-links">
+          <li><a href="information.html">ACADEMIC AID</a></li>
+          <li><a href="information.html">CAREER ADVISORY</a></li>
+          <li><a href="information.html">SOCIAL &amp; LIFE</a></li>
+          <li><a href="information.html">PREFERRED SERVICE</a></li>
+          <li><a href="information.html">ULTIMATE SERVICE</a></li>
+        </ul>
+      </div>
+
+      <div class="index-form centered">
+        <div class="list-centered index-form-nav navbar">
+          <ul>
+            <li><a href="information.html">INFORMATION</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
           </ul>
         </div>
-      </div>
-      <!-- end of left block -->
-
-      <div class="my-column right">
-        <div class="index-form centered">
-          <div class="list-centered index-form-nav navbar">
-            <ul>
-              <li><a href="information.html">INFORMATION</a></li>
-              <li><a href="events.html">EVENTS</a></li>
-              <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-          </div>
-          <img class="index-form-logo" width="130px" height="150px" src="images/logo-gold.png">
-          <p>LOGIN</p>
-          <hr class="linefade">
-          <form name="loginform" id="loginform" action="" method="post">
-            <p>
-              <label for="user_login">Username<br>
-              <input type="text" name="log" id="user_login" class="form-control input" value="" size="20"></label>
-            </p>
-            <p>
-              <label for="user_pass">Password<br>
-              <input type="password" name="pwd" id="user_pass" class="form-control input" value="" size="20"></label>
-            </p>
-            <p class="forget-info">
-              <a href="">FORGOT USERNAME OR PASSWORD</a>
-            </p>
-            <p class="submit">
-              <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-default" value="SIGN IN">
-            </p>
-          </form>
-          <div class="clear_20"></div>
-          <hr class="linefade">
-          <p class="text-center" style="padding-top: 30px;font-size:15px;">
-            <a href="">ENTER INVITATION CODE</a>
+        <img class="index-form-logo" url="imags/logo-gold.png">
+        <h5>LOGIN</h5>
+        <hr>
+        <form name="loginform" id="loginform" action="" method="post">
+          <p>
+            <label for="user_login">Username<br>
+            <input type="text" name="log" id="user_login" class="input" value="" size="20"></label>
           </p>
-        </div>
+          <p>
+            <label for="user_pass">Password<br>
+            <input type="password" name="pwd" id="user_pass" class="input" value="" size="20"></label>
+          </p>
+          <p>FORGOT USERNAME OR PASSWORD</p>
+          <p class="submit">
+            <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="SIGN IN">
+          </p>
+        </form>
+        <hr>
+        <p class="text-center" style="font-size:15px;">ENTER INVITATION CODE</p>
       </div>
-    </div>
+    </div>    
 
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
