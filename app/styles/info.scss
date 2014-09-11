@@ -1,5 +1,5 @@
 body.info {
-  background: url("/images/bg-information.jpg") no-repeat top center fixed;
+  background: url("/images/bg-information.jpg") no-repeat center center fixed;
   background-color: #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -26,11 +26,13 @@ body.info {
 }
 
 .static-nav-bar {
-  width: 90%;
+  /*width: 970px;
   margin-left: auto;
-  margin-right: auto;
-  padding-top: 12px;
+  margin-right: auto;  */
   margin-bottom: 40px;
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   .logo {
     float: left;
@@ -89,4 +91,28 @@ body.info {
   -webkit-box-shadow: 0 8px 6px -3px #888;
      -moz-box-shadow: 0 8px 6px -3px #888;
           box-shadow: 0 8px 6px -3px #888;
+}
+
+/***********/
+.my-content {
+  float: left;
+  position: relative;
+  padding-bottom: 120px;
+  width: 100%;
+  min-width: 1024px;
+  clear: both;
+}
+
+.info-block {
+  max-width: 60%;
+  min-width: 600px;
+  margin: auto;
+}
+
+.not-trans {
+  background-color: white;
+}
+
+.semi-trans {
+  background-color: rgba(255,255,255,.85);
 }

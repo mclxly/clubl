@@ -7,11 +7,12 @@
 /*==========  VARIABLES  ==========*/
 
   // Defining breakpoints
-  $medium: 620px !default;
-  $wide: 800px !default;
-  $huge: 1600px !default;
-  $mediumContainer: 688px !default;
-  $wideContainer: 1000px !default;/*864px*/
+  $medium: 768px !default;
+  $wide: 992px !default;
+  $huge: 1200px !default;
+  $mediumContainer: 750px !default;
+  $wideContainer: 970px !default;
+  $hugeContainer: 1170px !default;/*864px*/
 
   // Defining grid sizes
   $mediumColCount: 3 !default;
@@ -141,6 +142,12 @@
       padding-left: 4.4%;
       padding-right: 4.4%;
       max-width: $wideContainer;
+    }
+
+    @include huge {
+      padding-left: 4.4%;
+      padding-right: 4.4%;
+      max-width: $hugeContainer;
     }
   }
 
