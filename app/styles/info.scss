@@ -1,0 +1,92 @@
+body.info {
+  background: url("/images/bg-information.jpg") no-repeat top center fixed;
+  background-color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin:0;
+  padding:0;
+  height:100%;
+  min-width: 1020px;
+}
+
+.static-container {
+  position: fixed;
+  width: 100%;
+  padding: 2px 0;
+  border-bottom: 0;
+  letter-spacing: 1px;
+  background: 0 0;
+  z-index: 1030;
+
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.static-nav-bar {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  margin-bottom: 40px;
+
+  .logo {
+    float: left;
+  }
+
+  .tr-nav-bar {
+    float: right;
+    letter-spacing: 1px;
+
+    li { display: inline; }
+    ul { padding-top: 0;}
+
+    ul li::before,
+    ul.list-links a::before,
+    .list-anchor a::before {
+      content: "" !important;
+    }
+
+    a {
+      text-decoration: none;
+      color: #777;
+      padding: 0 5px;
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    a:hover,
+    a:focus {
+      color: #333;
+    }
+  }
+}
+
+.glow{
+  text-decoration: none;
+  color: #000000;
+  text-shadow:0 0 1px #fff, 0 0 2px #fff, 0 0 30px #fff, 0 0 4px #F8E2E2, 0 0 7px #F8EDF8, 0 0 8px #EEE3EE, 0 0 10px #F5EAF5, 0 0 15px #F5EAF5;
+   -webkit-stroke-width: 5.3px;
+   -webkit-stroke-color: #FFFFFF;
+   -webkit-fill-color: #FFFFFF;
+   -webkit-transition: width 0.3s; /*Safari & Chrome*/
+   transition: width 0.3s;
+   -moz-transition: width 0.3s; /* Firefox 4 */
+   -o-transition: width 0.3s; /* Opera */
+   text-decoration: none;
+}
+.glow:hover, .glow:focus,.glow:active{
+  color: #888888;
+}
+
+.turn-black {
+  padding: 0;
+  background-color: #000;
+
+  -webkit-box-shadow: 0 8px 6px -3px #888;
+     -moz-box-shadow: 0 8px 6px -3px #888;
+          box-shadow: 0 8px 6px -3px #888;
+}

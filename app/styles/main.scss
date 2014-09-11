@@ -29,8 +29,9 @@ body {
 body {
   position: relative;
   /*font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;*/
-  font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Montserrat, Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
+  font-size: 14px;
   background-color: #fff;
   box-sizing: border-box;
   min-height: 100%;
@@ -499,5 +500,5 @@ main {
 .btn-default:focus {
   outline: 0;
   color: #eee;
-  background-color: #333;
+  background-color: #5c5c5c;
 }
