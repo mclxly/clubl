@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="The Club L.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>The Club L | Events</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <link rel="icon" sizes="192x192" href="images/touch/logo-gold-small.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,8 +18,8 @@
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-TileImage" content="images/touch/logo-gold-small.png">
+    <meta name="msapplication-TileColor" content="#FFFF00">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -29,68 +29,60 @@
 
     <!-- Page styles -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/info.css">
 
   </head>
-  <body class="index">
-    <div class="container">
-      <div class="my-column left">
-        <div class="index-logo">
-          <a href="/">THE CLUB L</a>
+  <body class="events">
+    <div class="static-container">
+      <div class="container static-nav-bar">
+        <div class="logo">
+          <a href="/">
+            <img src="/images/logo-gold-small.png" alt="" width="25px" height="30px">
+          </a>
         </div>
-
-        <div class="index-menu">
-          <ul class="list-links">
-            <li><a href="information.html">ACADEMIC AID</a></li>
-            <li><a href="information.html">CAREER ADVISORY</a></li>
-            <li><a href="information.html">SOCIAL &amp; LIFE</a></li>
-            <li><a href="information.html">PREFERRED SERVICE</a></li>
-            <li><a href="information.html">ULTIMATE SERVICE</a></li>
+        <div class="list-centered tr-nav-bar">
+          <ul>
+            <li><a class="glow" href="information.html">INFORMATION</a></li>
+            <li><a class="glow" href="events.html">EVENTS</a></li>
+            <li><a class="glow" href="contact.html">CONTACT US</a></li>
           </ul>
         </div>
       </div>
-      <!-- end of left block -->
+    </div>
+    <!-- end of static-nav-bar block -->
 
-      <div class="my-column right">
-        <div class="index-form centered">
-          <div class="list-centered index-form-nav navbar">
-            <ul>
-              <li><a href="information.html">INFORMATION</a></li>
-              <li><a href="events.html">EVENTS</a></li>
-              <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
+    <div class="clear_30"></div>
+    <div class="my-content">
+      <div class="clear_60"></div>
+      <div class="clear_10"></div>
+
+      <div class="info-block not-trans">
+        <div class="clear_30"></div>
+        <div class="title">EVENTS</div>
+        <div class="pattern"></div>
+        <div class="content-text">
+          <div class="clear_60"></div>
+          <div class="noevents">NO CURRENT EVENTS</div>
+          <div class="clear_60"></div>
+          <div class="clear_60"></div>
+          <div class="clear_60"></div>
+        </div>
+      </div>
+      <div class="clear_10"></div>
+      <div class="my-content">
+        <div class="info-block">
+          <div class="more-events-btn" style="cursor:pointer;">
+            MORE EVENTS<br>
+            <img src="/images/arrow2.png" width="25px;">
           </div>
-          <img class="index-form-logo" width="130px" height="150px" src="images/logo-gold.png">
-          <p>LOGIN</p>
-          <hr class="linefade">
-          <form name="loginform" id="loginform" action="" method="post">
-            <p>
-              <label for="user_login">Username<br>
-              <input type="text" name="log" id="user_login" class="form-control input" value="" size="20"></label>
-            </p>
-            <p>
-              <label for="user_pass">Password<br>
-              <input type="password" name="pwd" id="user_pass" class="form-control input" value="" size="20"></label>
-            </p>
-            <p class="forget-info">
-              <a href="">FORGOT USERNAME OR PASSWORD</a>
-            </p>
-            <p class="submit">
-              <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-default" value="SIGN IN">
-            </p>
-          </form>
-          <div class="clear_20"></div>
-          <hr class="linefade">
-          <p class="text-center" style="padding-top: 30px;font-size:15px;">
-            <a href="">ENTER INVITATION CODE</a>
-          </p>
         </div>
       </div>
     </div>
+    <!-- end of container block -->
 
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/info.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

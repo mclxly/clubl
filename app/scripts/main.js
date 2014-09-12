@@ -18,7 +18,7 @@
  */
 (function () {
   'use strict';
-
+/*
   var querySelector = document.querySelector.bind(document);
 
   var navdrawerContainer = querySelector('.navdrawer-container');
@@ -27,7 +27,7 @@
   var menuBtn = querySelector('.menu');
   var main = querySelector('main');
 
-  /*
+
   function closeMenu() {
     body.classList.remove('open');
     appbarElement.classList.remove('open');

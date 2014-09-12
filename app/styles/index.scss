@@ -6,13 +6,6 @@ a.visited {
     transition: all .2s ease-in-out;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
 a:hover,
 a:focus {
   color: #333;
@@ -59,7 +52,7 @@ body.index {
   font-family: Montserrat;
   font-size: 40px;
   color: #777;
-  padding-top: 68px;
+  padding-top: 115px;
   padding-left: 0;
   letter-spacing: 1px;
 
@@ -120,7 +113,6 @@ body.index {
     color: #777;
     line-height: 20px;
     font-size: 14px;
-    font-weight: bold;
   }
   a:hover,
   a:focus {
@@ -169,7 +161,7 @@ body.index {
   }
 
   #loginform input {
-    width: 33.33%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     font-weight: normal;
