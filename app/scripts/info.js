@@ -8,4 +8,13 @@
         $(".static-container").removeClass("turn-black");
     }
   });
+
+  $('.menu-set li').on('click', function () {
+    // console.log('ab');
+    $('.menu-set div.selected').removeClass('selected');
+
+    $(this).next().addClass('selected');
+    $(this).next().toggleClass('hide', 500);
+    $('.menu-set div:not(.selected)').addClass('hide', 500);
+  });
 })();

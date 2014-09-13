@@ -11,10 +11,12 @@ a:focus {
   color: #333;
 }
 
-ul li::before,
-ul.list-links a::before,
-.list-anchor a::before {
-  content: "" !important;
+.index-form {
+  ul li::before,
+  ul.list-links a::before,
+  .list-anchor a::before {
+    content: "" !important;
+  }
 }
 
 body.index {
@@ -52,13 +54,17 @@ body.index {
   font-family: Montserrat;
   font-size: 40px;
   color: #777;
-  padding-top: 115px;
+  padding-top: 135px;
   padding-left: 0;
   letter-spacing: 1px;
+
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+
 
   a:hover,
   a:focus {
     color: #333;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.5), 0px -1px 0px rgba(0,0,0,.7);
   }
 }
 
@@ -134,7 +140,7 @@ body.index {
   }
 
   .index-form-logo {
-    margin: 15px;
+    margin: 10px 10px 0 10px;
   }
 
   p {
@@ -178,5 +184,20 @@ body.index {
       font-size: 0.6em;
       font-weight: normal;
     }
+  }
+}
+
+#basic-modal {
+  display: none;
+
+  ul li::before {
+    font-family: "icons";
+    font-size: 12px;
+    display: block;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 26px;
   }
 }

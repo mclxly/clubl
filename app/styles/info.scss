@@ -32,8 +32,8 @@ body.info {
   margin-right: auto;  */
   margin-bottom: 40px;
   padding-top: 12px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   .logo {
     float: left;
@@ -192,8 +192,50 @@ body.info {
   width: 45%;
   text-align: justify;
   padding-left: 5%;
-  font-family: Gentium Basic;
+  /*font-family: Gentium Basic;*/
+
+  ul li::before,
+  ul.list-links a::before,
+  .list-anchor a::before {
+    content: "" !important;
+  }
 }
+
+.selected {
+  /*color: red;*/
+}
+
+.hide {
+  display: none;
+}
+
+.menu-set {
+  text-align: left;
+
+  >li:not(:first-child) {
+    padding-top: 10px;
+  }
+
+  li {
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 0;
+  }
+
+  img {
+    width: 14px;
+    position: relative;
+    top: -2px;
+  }
+
+  ul {
+    padding-top: 0;
+    padding-left: 1.4em;
+    list-style-type: disc;
+    line-height: 1.4;
+  }
+}
+
 
 
 /***********************************************/
@@ -221,7 +263,7 @@ body.events {
 }
 
 .more-events-btn {
-  padding-top: 8px;
+  padding-top: 5px;
   padding-bottom: 20px;
   color: #474747;
   font-size: .9em;
@@ -232,4 +274,20 @@ body.events {
   background-color: #FFFFFF;
   opacity: .7;
   text-align: center;
+}
+
+/***********************************************/
+/***************Contacut Page*********************/
+/***********************************************/
+body.events {
+  background: url("/images/bg-contact.jpg") no-repeat center top fixed;
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat;
+  color: #000;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }

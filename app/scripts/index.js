@@ -29,6 +29,11 @@
   function sizeContent() {
       var newHeight = $(document).height() + "px";
       $(".index-form").css("height", newHeight);//"100%");
-      console.log($(document).height());
+      // console.log($(document).height());
   }
+
+  $('#login-submit').on('click', function(event) {
+    $("#basic-modal").modal();
+    event.preventDefault();
+  })
 })();
