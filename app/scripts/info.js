@@ -13,8 +13,17 @@
     // console.log('ab');
     $('.menu-set div.selected').removeClass('selected');
 
-    $(this).next().addClass('selected');
-    $(this).next().toggleClass('hide', 500);
-    $('.menu-set div:not(.selected)').addClass('hide', 500);
+    $(this).next().addClass('selected');    
+    $(this).next().animate({
+      width: [ "toggle", "swing" ],
+      height: [ "toggle", "swing" ],
+      opacity: "toggle"
+    }, 500);
+    $('.menu-set div:not(.selected)').hide(500);
+
+    // $(this).next().toggleClass('hide', 500);
+    // $('.menu-set div:not(.selected)').addClass('hide', 500);
+
+
   });
 })();

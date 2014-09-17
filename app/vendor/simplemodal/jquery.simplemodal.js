@@ -2,7 +2,7 @@
  * SimpleModal 1.4.4 - jQuery Plugin
  * http://simplemodal.com/
  * Copyright (c) 2013 Eric Martin
- * Licensed under MIT and GPL
+ * Licensed under MIT and GPLLinxiang.info
  * Date: Sun, Jan 20 2013 15:58:56 -0800
  */
 (function(b){"function"===typeof define&&define.amd?define(["jquery"],b):b(jQuery)})(function(b){var j=[],n=b(document),k=navigator.userAgent.toLowerCase(),l=b(window),g=[],o=null,p=/msie/.test(k)&&!/opera/.test(k),q=/opera/.test(k),m,r;m=p&&/msie 6./.test(k)&&"object"!==typeof window.XMLHttpRequest;r=p&&/msie 7.0/.test(k);b.modal=function(a,h){return b.modal.impl.init(a,h)};b.modal.close=function(){b.modal.impl.close()};b.modal.focus=function(a){b.modal.impl.focus(a)};b.modal.setContainerDimensions=
