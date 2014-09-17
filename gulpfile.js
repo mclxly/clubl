@@ -93,7 +93,7 @@ gulp.task('styles', function () {
       precision: 10
     }))
     .on('error', console.error.bind(console))
-    .pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
+    // .pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
     .pipe(gulp.dest('.tmp/styles'))
     // Concatenate And Minify Styles
     .pipe($.if('*.css', $.csso()))
