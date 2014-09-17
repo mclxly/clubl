@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="The Club L.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>The Club L | 首页</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="../images/touch/chrome-touch-icon-192x192.png">
+    <link rel="icon" sizes="192x192" href="../images/touch/logo-gold-small.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,8 +18,8 @@
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="../images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="msapplication-TileImage" content="../images/touch/logo-gold-small.png">
+    <meta name="msapplication-TileColor" content="#FFFF00">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -28,14 +28,21 @@
     <script src="../scripts/jquery-1.11.1.min.js"></script>
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/main.css?v=3">
+    <link rel="stylesheet" href="../styles/index.css?v=3">
+
+    <link type='text/css' href='../vendor/simplemodal/basic.css' rel='stylesheet' media='screen' />
+
+    <!-- IE6 "fix" for the close png image -->
+    <!--[if lt IE 7]>
+    <link type='text/css' href='vendor/simplemodal/basic_ie.css' rel='stylesheet' media='screen' />
+    <![endif]-->
 
   </head>
   <body class="index">
     <div class="container">
       <div class="my-column left">
-        <div class="index-logo">
+        <div class="index-logo glow">
           <a href="/">THE CLUB L</a>
         </div>
 
@@ -53,44 +60,84 @@
 
       <div class="my-column right">
         <div class="index-form centered">
-          <div class="list-centered index-form-nav navbar">
+          <div class="list-centered index-form-nav navbar glow">
             <ul>
               <li><a href="information.html">俱乐部概况</a></li>
               <li><a href="events.html">近期活动</a></li>
               <li><a href="contact.html">联系我们</a></li>
             </ul>
           </div>
-          <img class="index-form-logo" width="130px" height="150px" src="../images/logo-gold.png">
-          <p>登录</p>
+          <div class="clear_10"></div>
+          <img class="index-form-logo" width="140px" height="190px" src="../images/logo-gold.png">
+          <blockquote>
+            <p style="font-size: 13px; margin: 0 20px; color: #F0CD51; position: absolute;
+top: 225px;">A PRIVATE CLUB FOR INTERNATIONAL STUDENTS</p>
+          </blockquote>
+          <p style="padding-top: 3px">登录</p>
           <hr class="linefade">
           <form name="loginform" id="loginform" action="" method="post">
             <p>
-              <label for="user_login">用户名<br>
-              <input type="text" name="log" id="user_login" class="form-control input" value="" size="20"></label>
+              <label for="user_login" class="user-login">用户名<br>
+                <input type="text" name="log" id="user_login" class="form-control input" value="" size="20">
+                <span class="error-info hide">*</span>
+              </label>
             </p>
             <p>
-              <label for="user_pass">密码<br>
-              <input type="password" name="pwd" id="user_pass" class="form-control input" value="" size="20"></label>
+              <label for="user_pass" class="user-pass">密码<br>
+                <input type="password" name="pwd" id="user_pass" class="form-control input" value="" size="20">
+                <span class="error-info hide">*</span>
+              </label>
             </p>
+            <p class="login-form-error error-info hide" style="font-size: 0.9em; position: absolute; margin-left: 135px;">*标记必须输入内容</p>
+            <p class="login-form-failed error-info hide" style="font-size: 0.9em; position: absolute; margin-left: 130px;">不正确的用户名/密码.</p>
             <p class="forget-info">
-              <a href="">忘记密码/用户名</a>
+              <a href="" id="forgot-pwd">忘记用户名/密码</a>
             </p>
             <p class="submit">
-              <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-default" value="登录">
+              <input type="submit" name="login-submit" style="width: 86px;" id="login-submit" class="btn btn-default" value="登陆">
             </p>
           </form>
           <div class="clear_20"></div>
           <hr class="linefade">
           <p class="text-center" style="padding-top: 30px;font-size:15px;">
-            <a href="">输入邀请码</a>
+            <a href="" id="invitation">输入登陆码</a>
           </p>
         </div>
       </div>
     </div>
 
+    <div id='basic-modal' class="hide">
+      <h4>登陆失败!</h4>
+      <ul>
+        <li>输入错误的用户名/密码.</li>
+        <li>需要输入邀请码.</li>
+      </ul>
+    </div>
+
+    <div id='forgot-pwd-dialog' class="my-input-dialog hide">
+      <h4>请输入注册邮箱:</h4>
+      <input name="email" id="email" class="form-control input" value="" size="20">
+      <p class="error-info hide" style="font-size: 0.9em; position: absolute; margin-left: 150px;">注册邮箱没有找到.</p>
+      <p class="submit">
+        <input type="submit" name="login-submit" style="width: 86px;" id="login-submit" class="btn btn-default" value="提交" disabled="true">
+        <input type="submit" name="login-submit" style="width: 86px;" id="login-cancel" class="btn btn-default" value="取消">
+      </p>
+    </div>
+
+    <div id='invitation-dialog' class="my-input-dialog hide">
+      <h4>输入登陆码:</h4>
+      <input name="code" id="code" class="form-control input" value="" size="20">
+      <p class="error-info hide" style="font-size: 0.9em; position: absolute; margin-left: 140px;">输入的登陆码无效.</p>
+      <p class="submit">
+        <input type="submit" name="login-submit" style="width: 86px;" id="login-submit" class="btn btn-default" value="提交" disabled="true">
+        <input type="submit" name="login-submit" style="width: 86px;" id="login-cancel" class="btn btn-default" value="取消">
+      </p>
+    </div>
+
     <!-- build:js scripts/main.min.js -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/index.js"></script>
+    <script src="../scripts/main.js?v=3"></script>
+    <script src="../scripts/index.js?v=3"></script>
+    <script type='text/javascript' src='../vendor/simplemodal/jquery.simplemodal.js'></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
