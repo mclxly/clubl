@@ -87,6 +87,19 @@ body.info {
           box-shadow: 0 8px 6px -3px #888;*/
 }
 
+#about-us {
+  position: absolute;
+  top: 440px;
+}
+#membership {
+  position: absolute;
+  top: 1080px;
+}
+#service {
+  position: absolute;
+  top: 1500px;
+}
+
 /*****************************/
 .my-content {
   float: left;
@@ -145,7 +158,7 @@ body.info {
     position: relative;
     text-align: right;
     text-decoration: none;
-    padding-right: 5%;
+    /*padding-right: 5%;*/
 
     a {
       color: #F0CD51;
