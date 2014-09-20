@@ -12,7 +12,7 @@ body.info {
   color: #000;
 
   .static-container {
-    background: url("/images/bg-information.jpg") no-repeat center center fixed;
+    background: url("/images/bg-information.jpg") no-repeat center center fixed;  
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -126,7 +126,7 @@ body.info {
 
 .info-block {
   max-width: 60%;
-  min-width: 600px;
+  min-width: 600px;  
   margin: auto;
   text-align: center;
 }
@@ -339,7 +339,7 @@ body.contact {
   -o-background-size: cover;
 
   .static-container {
-    background: url("/images/bg-contact.jpg") no-repeat center top fixed;
+    background: url("/images/bg-contact.jpg") no-repeat center top fixed;  
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
