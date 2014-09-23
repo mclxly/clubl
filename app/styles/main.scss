@@ -26,6 +26,18 @@ body {
   padding: 0;
 }
 
+body.cn {
+  Font-family: Simsun,'Helvetica Neue',Helvetica,Arial,Sans-serif !important;
+
+  .navbar,
+  .index-form p,
+  .content-text p,
+  .membership .member-item,
+  .info-half,
+  .noevents
+  {Font-family: Simsun,'Helvetica Neue',Helvetica,Arial,Sans-serif !important;}
+}
+
 body {
   position: relative;
   /*font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;*/
